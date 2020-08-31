@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div className="App">
-      <h1>React todo App | Vinothkumar S</h1>
+      <header>
+        <h1>Vinothkumar S' Todo's</h1>
+      </header>
+      <Form></Form>
     </div>
   );
 }
