@@ -38,7 +38,11 @@ function App() {
         setTodos={setTodos}
         setStatus={setStatus}
       ></Form>
-      <TodoList todos={todos} setTodos={setTodos}></TodoList>
+      <TodoList
+        todos={todos}
+        setTodos={setTodos}
+        filteredTodos={filteredTodos}
+      ></TodoList>
     </div>
   );
 }
