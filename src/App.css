@@ -150,3 +150,9 @@ select {
   transform: scale(1.5);
 }
 */
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+}

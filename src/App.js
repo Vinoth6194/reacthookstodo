@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
+import Footer from "./components/Footer";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -62,6 +63,7 @@ function App() {
         setTodos={setTodos}
         filteredTodos={filteredTodos}
       ></TodoList>
+      <Footer className="footer"></Footer>
     </div>
   );
 }
