@@ -18,7 +18,7 @@ function App() {
         todos={todos}
         setTodos={setTodos}
       ></Form>
-      <TodoList></TodoList>
+      <TodoList todos={todos}></TodoList>
     </div>
   );
 }
