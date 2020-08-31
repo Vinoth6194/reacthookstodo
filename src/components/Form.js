@@ -1,10 +1,14 @@
 import React from "react";
 
-const Form = () => {
+const Form = ({ setInputText }) => {
+  const inputHandler = (e) => {
+    console.log(e.target.value);
+    setInputText(e.target.value);
+  };
   return (
     <div>
       <form>
-        <input type="text" className="todo-input" />
+        <input type="text" className="todo-input" onChange={inputHandler} />
         <button className="todo-button" type="submit">
           <i className="fas fa-plus-square"></i>
         </button>
